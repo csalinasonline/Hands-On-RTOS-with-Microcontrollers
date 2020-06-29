@@ -112,8 +112,8 @@ void RedTask( void* argument )
 	{
 		SEGGER_SYSVIEW_PrintfHost("RedTaskRunning\n");
 		RedLed.On();
-		vTaskDelay(1000/ portTICK_PERIOD_MS);
+		vTaskDelay(100/ portTICK_PERIOD_MS);
 		RedLed.Off();
-		vTaskDelay(1000/ portTICK_PERIOD_MS);
+		vTaskDelay(100/ portTICK_PERIOD_MS);
 	}
 }
