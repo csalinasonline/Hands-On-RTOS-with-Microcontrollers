@@ -73,6 +73,9 @@ int main(void)
 						tskIDLE_PRIORITY + 1,
 						GreenTaskStack, &GreenTaskTCB);
 
+	// Config to setup trace hooks already in FreeRTOS and used by System View
+	SEGGER_SYSVIEW_Conf();
+
 	//start the scheduler - shouldn't return unless there's a problem
 	vTaskStartScheduler();
 

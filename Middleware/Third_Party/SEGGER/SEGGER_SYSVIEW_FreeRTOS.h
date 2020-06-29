@@ -69,6 +69,7 @@ Notes:
 #define SYSVIEW_FREERTOS_H
 
 #include "SEGGER_SYSVIEW.h"
+#include "SEGGER_SYSVIEW_FREERTOS.h"
 
 /*********************************************************************
 *
@@ -81,6 +82,8 @@ Notes:
 #endif
 
 #define SYSVIEW_FREERTOS_MAX_NOF_TASKS  8
+#define INCLUDE_xTaskGetIdleTaskHandle 1
+#define INCLUDE_pxTaskGetStackStart 1
 
 /*********************************************************************
 *
